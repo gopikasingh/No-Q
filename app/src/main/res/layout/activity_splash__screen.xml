@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="131dp"
+        android:layout_height="149dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="390dp"
+        android:src="@drawable/completelogo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="Shop More. Wait Less."
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logo"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="-44dp"
+        android:fontFamily="@font/bungee_inline"
+        android:gravity="center_horizontal"
+        android:text="NO Q"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="50dp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
