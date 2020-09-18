@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="41dp"
+
+                android:text="Create a new account as a shop owner"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.053" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="55dp"
+                android:drawableStart="@drawable/ic_baseline_person_outline_24"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+                android:ems="10"
+                android:hint="Shop Name"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:hint="Country"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:hint="State"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:hint="City"
+                android:drawableStart="@drawable/ic_location_city"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:hint="PIN Code"
+                android:drawableStart="@drawable/ic_baseline_fiber_pin_24"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:hint="Street Address"
+                android:drawableStart="@drawable/ic_my_location"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:hint="Phone Number"
+                android:drawableStart="@drawable/ic_phone"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:drawableStart="@drawable/ic_mail"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="225dp"
+                android:drawableStart="@drawable/ic_outline_remove_red_eye_24"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="-200dp"
+                android:hint="Confirm password"
+                android:textSize="22sp"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="116dp"
+                android:layout_marginBottom="132dp"
+                android:background="#00B8D4"
+                android:text="SIGNUP"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="17dp"
+                android:background="@color/white"
+                android:text="Already have an account?Login"
+                android:textColor="#00B8D4" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
