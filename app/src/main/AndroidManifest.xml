@@ -11,7 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".Splash_Screen"
+        <activity
+            android:name=".inventory"
+            android:label="@string/title_activity_inventory"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".demoshop" />
+        <activity android:name=".Shop" />
+        <activity android:name=".Custnewacc" />
+        <activity android:name=".Customer" />
+        <activity android:name=".signup" />
+        <activity android:name=".MainActivity1" />
+        <activity
+            android:name=".Splash_Screen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
