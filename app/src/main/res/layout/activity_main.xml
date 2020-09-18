@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -66,7 +67,8 @@
         android:text="I Am A Shop Owner"
         android:textColor="@color/ic_launcher_background"
         android:textSize="24sp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"/>
+
 
 
 </RelativeLayout>
