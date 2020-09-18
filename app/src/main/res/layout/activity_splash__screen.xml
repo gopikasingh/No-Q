@@ -26,7 +26,7 @@
         android:gravity="center_horizontal"
         android:text="Shop More. Wait Less."
         android:textColor="@color/colorAccent"
-        android:textSize="20dp"
+        android:textSize="20sp"
 
         tools:ignore="HardcodedText" />
 
@@ -47,7 +47,7 @@
         android:gravity="center_horizontal"
         android:text="NO Q"
         android:textColor="@color/ic_launcher_background"
-        android:textSize="50dp"
+        android:textSize="50sp"
         tools:ignore="HardcodedText" />
 
 </RelativeLayout>
