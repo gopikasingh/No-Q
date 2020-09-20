@@ -11,10 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
+        <activity android:name=".itemlist"></activity>
+        <activity android:name=".cardmain" />
         <activity
             android:name=".inventory"
             android:label="@string/title_activity_inventory"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".demoshop" />
         <activity android:name=".Shop" />
         <activity android:name=".Custnewacc" />

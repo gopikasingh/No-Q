@@ -38,7 +38,7 @@ public class Customer extends AppCompatActivity {
             startActivity(intent);
         }
     public void opendemoshop() {
-        Intent intent = new Intent(this, Shop.class);
+        Intent intent = new Intent(this, cardmain.class);
         startActivity(intent);
     }
 
