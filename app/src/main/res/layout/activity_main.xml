@@ -21,7 +21,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="28dp"
                 android:src="@drawable/shop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.397"
@@ -43,7 +43,7 @@
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button2"
-                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_bias="0.118"
                 tools:ignore="ContentDescription" />
 
             <Button
@@ -53,6 +53,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginTop="250dp"
                 android:backgroundTint="#003A3939"
                 android:fontFamily="@font/bangers"
                 android:text="I am a Shopper"
@@ -62,7 +63,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/customer"
+                app:layout_constraintTop_toTopOf="@+id/customer"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText" />
 
@@ -73,7 +74,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="250dp"
                 android:backgroundTint="#003A3939"
                 android:fontFamily="@font/bangers"
                 android:text="I Am A Shop Owner"
@@ -82,7 +83,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shop"
+                app:layout_constraintTop_toTopOf="@+id/shop"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -94,6 +95,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button" />
 
+            
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
