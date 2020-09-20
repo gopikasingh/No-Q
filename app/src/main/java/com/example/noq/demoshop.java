@@ -28,7 +28,7 @@ public class demoshop extends AppCompatActivity {
                 openshopbuttonactivity(); }});
     }
     public void openshopbuttonactivity() {
-        Intent intent = new Intent(this, inventory.class);
+        Intent intent = new Intent(this, itemlist.class);
         startActivity(intent);
     }
 }

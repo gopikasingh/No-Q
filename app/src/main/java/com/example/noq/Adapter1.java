@@ -2,6 +2,7 @@ package com.example.noq;
 
 import android.content.Context;
 import android.content.Intent;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,25 +17,25 @@ import java.util.List;
 import androidx.appcompat.app.AppCompatActivity;
 import static androidx.core.content.ContextCompat.startActivity;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
+public class Adapter1 extends RecyclerView.Adapter<Adapter1.ViewHolder> {
 
     private LayoutInflater layoutInflater;
     List<Integer> images;
     private List<String> data;
     private List<String> data1;
 
-    public Adapter(Context context, List<String> data, List<String> data1, List<Integer> images){
+    public Adapter1(Context context, List<String> data, List<String> data1, List<Integer> images){
         this.layoutInflater = LayoutInflater.from(context);
         this.images = images;
         this.data = data;
         this.data1 = data1;;
     }
 
-//Gutkanatak
+    //Gutkanatak
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = layoutInflater.inflate(R.layout.cardlist,parent,false);
+        View view = layoutInflater.inflate(R.layout.items,parent,false);
         return new ViewHolder(view);
     }
 
@@ -60,19 +61,21 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //openshopbuttonactivity();
-                    Intent i = new Intent(v.getContext(),demoshop.class);
-                    //i.putExtra("title",data.get(getAdapterPosition()));
-                    //Toast.makeText(v.getContext(), "Clicked -> " + getAdapterPosition(), Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(v.getContext(),Details.class);
+                    i.putExtra("title",data.get(getAdapterPosition()));
+                    //Intent j = new Intent(v.getContext(),Details.class);
+                    //j.putExtra("image",images.get(getAdapterPosition()));
+                    Toast.makeText(v.getContext(), "Clicked -> " + getAdapterPosition(), Toast.LENGTH_SHORT).show();
                     v.getContext().startActivity(i);
                 }
             });
-            textTitle = itemView.findViewById(R.id.shopname);
-            gridIcon = itemView.findViewById(R.id.shopphoto);
-            textDescription = itemView.findViewById(R.id.shopaddress);
+            textTitle = itemView.findViewById(R.id.itemname);
+            gridIcon = itemView.findViewById(R.id.itemphoto);
+            textDescription = itemView.findViewById(R.id.itemprice);
         }
     }
     //public void openshopbuttonactivity() {
-        //Intent intent = new Intent(this, demoshop.class);
-        //startActivity(intent);
+    //Intent intent = new Intent(this, demoshop.class);
+    //startActivity(intent);
 }
+
