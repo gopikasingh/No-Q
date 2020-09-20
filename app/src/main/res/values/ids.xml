@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="edtusername" type="id" />
+    <item name="edtpass" type="id" />
+    <item name="edtemail" type="id" />
+    <item name="edtconpass" type="id" />
+</resources>
