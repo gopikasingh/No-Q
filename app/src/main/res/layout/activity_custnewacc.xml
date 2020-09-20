@@ -1,74 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Custnewacc">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Custnewacc">
 
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="360dp"
-        android:layout_height="44dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="596dp"
-        android:text="Create a new account as Customer"
-        android:textSize="22dp" />
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="312dp"
+    android:layout_height="31dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="53dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="46dp"
+    android:layout_marginBottom="609dp"
+    android:text="Create a new account as Customer"
+    android:textColor="@color/black"
+    android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="137dp"
-        android:layout_marginTop="485dp"
-        android:layout_marginEnd="137dp"
-        android:layout_marginBottom="146dp"
-        android:background="#00B8D4"
-        android:text="SIGNUP"
-        android:textColor="@color/white"
-        android:textSize="30sp" />
+<EditText
+    android:id="@+id/editTextTextPersonName4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:drawableStart="@drawable/ic_baseline_person_outline_24"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="75dp"
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="592dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="22dp"
-        android:background="@color/white"
-        android:text="ALREADY HAVE AN ACCOUNT?LOGIN"
-        android:textColor="#00B8D4" />
+    android:layout_marginEnd="50dp"
 
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="83dp"
-        android:layout_marginBottom="522dp"
-        android:ems="10"
-        android:textSize="22sp"
-        android:inputType="textPersonName"
-        android:hint="Name" />
+
+    android:ems="10"
+    android:hint="Full Name"
+    android:inputType="textPersonName"
+    android:textSize="22sp" />
+
+<EditText
+    android:id="@+id/editTextTextPersonName6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="123dp"
+    android:layout_marginEnd="50dp"
+    android:drawableStart="@drawable/ic_phone"
+    android:ems="10"
+    android:hint="Phone Number"
+
+    android:inputType="textPersonName"
+    android:textSize="22sp" />
+
+<EditText
+    android:id="@+id/editTextTextPersonName7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="176dp"
+    android:layout_marginEnd="50dp"
+    android:ems="10"
+    android:drawableStart="@drawable/ic_baseline_location_on_24"
+    android:hint="Country"
+    android:inputType="textPersonName"
+    android:textSize="22sp" />
+
+<EditText
+    android:id="@+id/editTextTextPersonName8"
+    android:layout_width="303dp"
+    android:layout_height="45dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="228dp"
+    android:layout_marginEnd="50dp"
+
+    android:ems="10"
+    android:hint="State"
+    android:inputType="textPersonName"
+    android:textSize="22sp" />
+
+<EditText
+    android:id="@+id/editTextTextPersonName9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="273dp"
+    android:layout_marginEnd="50dp"
+    android:ems="10"
+    android:drawableStart="@drawable/ic_my_location"
+    android:hint="Address"
+    android:inputType="textPersonName"
+    android:textSize="22sp" />
+
+<EditText
+    android:id="@+id/editTextTextPersonName10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="328dp"
+    android:layout_marginEnd="50dp"
+    android:ems="10"
+    android:drawableStart="@drawable/ic_mail"
+    android:hint="Username"
+    android:inputType="textPersonName"
+    android:textSize="22sp" />
+
+<EditText
+    android:id="@+id/editTextTextPassword4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="383dp"
+    android:layout_marginEnd="50dp"
+    android:drawableStart="@drawable/ic_outline_remove_red_eye_24"
+    android:ems="10"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textSize="22sp" />
+
+<EditText
+    android:id="@+id/editTextTextPassword5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="434dp"
+    android:layout_marginEnd="50dp"
+    android:ems="10"
+
+    android:hint="Confirm Password"
+
+    android:inputType="textPassword"
+    android:textSize="22sp" />
+
+<Button
+    android:id="@+id/button9"
+    android:layout_width="115dp"
+    android:layout_height="61dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="148dp"
+    android:layout_marginEnd="148dp"
+    android:layout_marginBottom="113dp"
+    android:text="SIGNUP"
+    android:textSize="22sp" />
+
+<Button
+    android:id="@+id/button10"
+    android:layout_width="316dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="60dp"
+    android:layout_marginEnd="35dp"
+    android:layout_marginBottom="41dp"
+    android:text="Already have an account?LOGIN" />
+
+
 </RelativeLayout>
