@@ -12,9 +12,12 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+=======
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;

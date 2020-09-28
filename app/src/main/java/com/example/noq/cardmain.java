@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -14,6 +15,8 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
+=======
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -25,6 +28,7 @@ public class cardmain extends AppCompatActivity {
     ArrayList<String> items;
     ArrayList<String> items1;
     List<Integer> images;
+<<<<<<< HEAD
     SearchView searchView;
     ListView listView;
     ArrayList<String> list;
@@ -32,12 +36,15 @@ public class cardmain extends AppCompatActivity {
     ImageButton scanner;
     private ImageButton imageButton;
 
+=======
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardmain);
+<<<<<<< HEAD
 
         imageButton=(ImageButton) findViewById(R.id.imageButton);
 
@@ -60,6 +67,10 @@ public class cardmain extends AppCompatActivity {
 
     //Toolbar toolbar1 =findViewById(R.id.toolbar2);
         //setSupportActionBar(toolbar1);
+=======
+        Toolbar toolbar1 =findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar1);
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
         images = new ArrayList<>();
         items = new ArrayList<>();
         items1 = new ArrayList<>();
@@ -81,6 +92,7 @@ public class cardmain extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+<<<<<<< HEAD
 
         adapter = new Adapter(this,items, items1, images);
         recyclerView.setAdapter(adapter);
@@ -127,3 +139,9 @@ public class cardmain extends AppCompatActivity {
    //}
 
 
+=======
+        adapter = new Adapter(this,items, items1, images);
+        recyclerView.setAdapter(adapter);
+    }
+}
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc

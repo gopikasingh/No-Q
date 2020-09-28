@@ -1,12 +1,16 @@
 package com.example.noq;
 
+<<<<<<< HEAD
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+=======
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,12 +23,22 @@ import java.util.ArrayList;
 import java.util.List;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+=======
+import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.List;
+
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 public class itemlist extends AppCompatActivity {
     RecyclerView recyclerView;
     Adapter1 adapter;
     ArrayList<String> items;
     ArrayList<String> items1;
+<<<<<<< HEAD
     ArrayList<String> barcodes;
+=======
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
     List<Integer> images;
 
 
@@ -35,32 +49,45 @@ public class itemlist extends AppCompatActivity {
         images = new ArrayList<>();
         items = new ArrayList<>();
         items1 = new ArrayList<>();
+<<<<<<< HEAD
         barcodes = new ArrayList<>();
+=======
+
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
         items.add("Gram Flour");
         items.add("Flour");
         items.add("White sugar");
         items.add("Salt");
         items.add("Rice");
         items.add("Almond");
+<<<<<<< HEAD
         items.add("Cinthol Soap");
         items.add("Jeera Khari");
         items.add("Maggi Pichku");
+=======
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
         items1.add("1 Kg"+"\n"+"\n"+"Rs 50.00");
         items1.add("5 Kg"+"\n"+"\n"+"Rs 150.00");
         items1.add("1 Kg"+"\n"+"\n"+"Rs 45.00");
         items1.add("1 Kg"+"\n"+"\n"+"Rs 25.00");
         items1.add("1 Kg"+"\n"+"\n"+"Rs 150.00");
         items1.add("1 Kg"+"\n"+"\n"+"Rs 250.00");
+<<<<<<< HEAD
         items1.add("Pack of 5"+"\n"+"\n"+"Rs 100.00");
         items1.add("Pack of 200g"+"\n"+"\n"+"Rs 60.00");
         items1.add("Pack of 90g"+"\n"+"\n"+"Rs 15.00");
 
+=======
+        items1.add("1 Kg"+"\n"+"\n"+"Rs 250.00");
+        items1.add("1 Kg"+"\n"+"\n"+"Rs 250.00");
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
         images.add(R.drawable.gramflour);
         images.add(R.drawable.flour);
         images.add(R.drawable.whitesugar);
         images.add(R.drawable.salt);
         images.add(R.drawable.rice);
         images.add(R.drawable.almond);
+<<<<<<< HEAD
         images.add(R.drawable.cinthol);
         images.add(R.drawable.khari);
         images.add(R.drawable.pichku);
@@ -76,6 +103,10 @@ public class itemlist extends AppCompatActivity {
 
 
 
+=======
+        images.add(R.drawable.almond);
+        images.add(R.drawable.almond);
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 
 
 
@@ -84,6 +115,7 @@ public class itemlist extends AppCompatActivity {
         adapter = new Adapter1(this,items, items1, images);
         recyclerView.setAdapter(adapter);
     }
+<<<<<<< HEAD
     public void ScanButton(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.initiateScan();
@@ -178,4 +210,6 @@ public class itemlist extends AppCompatActivity {
         recyclerView1.setAdapter(adapter1);
 
     }
+=======
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 }

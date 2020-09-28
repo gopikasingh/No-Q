@@ -5,8 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+<<<<<<< HEAD
     android:background="@color/grey"
     android:padding="20dp">
+=======
+    android:background="#ccc"
+    android:padding="15dp">
+>>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
