@@ -30,7 +30,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         this.data1 = data1;;
     }
 
-//Gutkanatak
+    //Gutkanatak
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -73,6 +73,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         }
     }
     //public void openshopbuttonactivity() {
-        //Intent intent = new Intent(this, demoshop.class);
-        //startActivity(intent);
+    //Intent intent = new Intent(this, demoshop.class);
+    //startActivity(intent);
 }

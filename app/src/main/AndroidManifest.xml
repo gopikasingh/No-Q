@@ -3,16 +3,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.noq">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".itemlist"></activity>
+        <activity android:name=".profile"></activity>
+        <activity android:name=".barcode_scanner" />
+        <activity android:name=".itemlist" />
         <activity android:name=".cardmain" />
+
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
+
         <activity
             android:name=".inventory"
             android:label="@string/title_activity_inventory"
@@ -23,6 +46,11 @@
         <activity android:name=".Customer" />
         <activity android:name=".signup" />
         <activity android:name=".MainActivity1" />
+        <activity android:name=".Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.noq.itemlist" />
+        </activity>
         <activity
             android:name=".Splash_Screen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -43,6 +71,8 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
     </application>
 
 </manifest>

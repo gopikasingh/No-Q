@@ -10,7 +10,7 @@ public class Details extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ///getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent i = getIntent();
         //Intent j = getIntent();
