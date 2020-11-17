@@ -16,5 +16,13 @@ public class App extends Application {
                 .build()
         );
 
+        /*Parse.initialize(new Parse.Configuration.Builder(this)
+                .applicationId("FVYc5eyCRHWl8IuLoy7nnvSjUhASv9K5It3p5udP")
+                // if defined
+                .clientKey("QBpUgMgfeOlAFXNv6Vk0jQTN6YT1o9GoQLK9ci9q")
+                .server("https://parseapi.back4app.com/")
+                .build()
+        );*/
+
     }
 }

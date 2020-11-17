@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Customer">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,22 +19,6 @@
             android:orientation="vertical">
 
 
-            <ProgressBar
-                android:id="@+id/progressbar2"
-                style="@android:style/Widget.Material.Light.ProgressBar"
-                android:layout_width="match_parent"
-                android:layout_height="741dp"
-                android:background="@color/grey"
-                android:indeterminate="true"
-
-                android:indeterminateTint="@color/ic_launcher_background"
-                android:max="50"
-                android:scrollbarSize="1dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.555"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -79,7 +64,7 @@
                 android:autofillHints="Please enter your username"
                 android:drawableEnd="@drawable/ic_mail"
                 android:ems="10"
-                android:hint="Username"
+                android:hint="Email"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.495"
@@ -153,4 +138,21 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar7"
+        style="@android:style/Widget.Material.Light.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E73A3939"
+        android:indeterminate="true"
+
+        android:indeterminateTint="@color/ic_launcher_background"
+        android:max="50"
+        android:scrollbarSize="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

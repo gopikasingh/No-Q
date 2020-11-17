@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addItem">
+
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="match_parent"
+        android:alpha="0.15"
+        android:rotation="90"
+        android:src="@drawable/bg2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <ImageView
+        android:id="@+id/new_post_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:padding="125dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+
+    <Button
+        android:id="@+id/post_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/grey"
+        android:padding="16dp"
+        android:text="ADD ITEM"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barcode_btn" />
+
+    <EditText
+        android:id="@+id/new_post_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Add item discription"
+        android:inputType="textMultiLine"
+        android:maxLength="125"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_item_price" />
+
+    <EditText
+        android:id="@+id/new_item_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Add price"
+        android:inputType="textMultiLine"
+        android:maxLength="125"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_item_name" />
+
+    <EditText
+        android:id="@+id/new_item_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Add item quantity"
+        android:inputType="textMultiLine"
+        android:maxLength="125"
+
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_post_desc" />
+
+    <EditText
+        android:id="@+id/new_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Add Item name"
+        android:inputType="textMultiLine"
+        android:maxLength="125"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_post_image"
+        app:layout_constraintVertical_bias="0.291" />
+
+
+    <TextView
+        android:id="@+id/barcode_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Add barcode"
+        android:inputType="textMultiLine"
+        android:maxLength="125"
+        android:onClick="ScanButton1"
+        android:padding="16dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_item_quantity" />
+
+    <ProgressBar
+        android:id="@+id/new_post_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_btn"
+        app:layout_constraintVertical_bias="0.029" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

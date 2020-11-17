@@ -1,64 +1,86 @@
 package com.example.noq;
 
-import android.os.Bundle;
 
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link tlist#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class tlist extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+public class tlist {
+    private String date;
+    private String desc;
+    private String itemid;
+    private String pname;
+    private float price;
+    private String qty;
+    private String time;
+    private String sn;
+    private String itemImage;
 
     public tlist() {
-        // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment tlist.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static tlist newInstance(String param1, String param2) {
-        tlist fragment = new tlist();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+    public tlist(String date, String desc, String itemid, String pname, float price, String qty, String time, String sn, String itemImage) {
+        this.date = date;
+        this.desc = desc;
+        this.itemid = itemid;
+        this.pname = pname;
+        this.price = price;
+        this.qty = qty;
+        this.time = time;
+        this.sn = sn;
+        this.itemImage = itemImage;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+    public void setSn(String sn) {
+        this.sn = sn;
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tlist, container, false);
+    public String getSn() {
+        return sn;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getItemid() {
+        return itemid;
+    }
+
+    public void setItemid(String itemid) {
+        this.itemid = itemid;
+    }
+
+    public String getPname() {
+        return pname;
+    }
+
+    public void setPname(String pname) {
+        this.pname = pname;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public String getQty() {
+        return qty;
+    }
+
+    public void setQty(String qty) {
+        this.qty = qty;
+    }
+
+    public String getItemImage() {
+        return itemImage;
+    }
+
+    public void setItemImage(String itemImage) {
+        this.itemImage = itemImage;
     }
 }

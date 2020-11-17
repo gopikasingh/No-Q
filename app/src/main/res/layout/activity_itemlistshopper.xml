@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".itemlistshopper">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="90dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <SearchView
+                android:id="@+id/searchView311"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#938F8F"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="add"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@color/white"
+                android:queryHint="Search for items"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton211"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </SearchView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button15"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/imageButton211"
+                android:layout_width="59dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="1dp"
+                android:onClick="opencart"
+                app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:onClick="ScanButton"
+                android:text="Add items with barcode Scanner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView311" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

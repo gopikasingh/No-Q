@@ -5,10 +5,13 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".App"
@@ -20,11 +23,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".profile"></activity>
+        <activity android:name=".mycart"></activity>
+        <activity android:name=".payment" />
+        <activity android:name=".feedbackofitems" />
+        <activity android:name=".feedback" />
+        <activity android:name=".itemlistshopper" />
+        <activity android:name=".addshop2" />
+        <activity android:name=".inshop" />
+        <activity android:name=".addItem" />
+        <activity android:name=".shoplog" />
+        <activity android:name=".addshop" />
+        <activity android:name=".profile2" />
+        <activity android:name=".next" />
+        <activity android:name=".profile" />
         <activity android:name=".barcode_scanner" />
         <activity android:name=".itemlist" />
         <activity android:name=".cardmain" />
-
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
 
         <meta-data
             android:name="com.parse.SERVER_URL"
@@ -71,8 +88,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-
     </application>
 
 </manifest>

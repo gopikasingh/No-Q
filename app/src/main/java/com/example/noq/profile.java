@@ -50,8 +50,8 @@ public class profile extends AppCompatActivity implements View.OnClickListener {
         TextView textView15 = findViewById(R.id.textView15);
         TextView textView16 = findViewById(R.id.textView16);
 
-        ImageButton imageButton7 = findViewById(R.id.imageButton7);
-        ImageButton imageButton8 = findViewById(R.id.imageButton8);
+        ImageButton imageButton7 = findViewById(R.id.imageButton755);
+        ImageButton imageButton8 = findViewById(R.id.imageButton855);
 
         imageButton7.setOnClickListener(/*(View.OnClickListener)*/ profile.this);
         imageButton8.setOnClickListener(profile.this);
@@ -70,7 +70,7 @@ public class profile extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
 
 
-        if (v.getId() == R.id.imageButton7) {
+        if (v.getId() == R.id.imageButton755) {
 
 
             int permissionResult = ContextCompat.checkSelfPermission(profile.this, Manifest.permission.CAMERA);
@@ -96,7 +96,7 @@ public class profile extends AppCompatActivity implements View.OnClickListener {
 
             }
 
-        } else if (v.getId() == R.id.imageButton8) {
+        } else if (v.getId() == R.id.imageButton855) {
 
          }
     }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68D9E8"
+    android:backgroundTint="#42ABB8"
+    android:orientation="vertical"
+    tools:context=".feedback">
+
+
+    <ImageButton
+        android:id="@+id/imbtn00"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_backbtn"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shopinpaint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="98sp"
+            android:baselineAligned="false"
+            android:numStars="5"
+            android:progressTint="#FB8C00"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center_horizontal"
+        android:text=" very dissatisfied "
+        android:textColor="#FFFFFF" />
+    <TextView
+        android:id="@+id/textView00"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Shop Name"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/multiline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="GIVE YOUR FEEDBACK"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170sp"
+        android:background="@color/grey"
+        android:text="SEND"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+</LinearLayout>

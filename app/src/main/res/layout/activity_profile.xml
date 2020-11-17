@@ -11,135 +11,199 @@ android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/gradientbackground">
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/white">
 
+        <View
+            android:id="@+id/viewxx55"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view255"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_wave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewxx55" />
+
+
+        <View
+            android:id="@+id/view555"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/textView2255"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PROFILE"
-            android:textColor="#01579B"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="8dp"
+            android:fontFamily="@font/aclonica"
+            android:text="PROFILE"
             android:textAlignment="center"
-            android:textSize="25sp"
+            android:textColor="#01579B"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="166dp"
-            tools:layout_editor_absoluteY="49dp"
             tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button1155"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/gradientbackground"
+            android:text="LOGOUT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1855"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView1555"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:text="Name"
+            android:textSize="22sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.288"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView555"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView555"
+            android:layout_width="186dp"
+            android:layout_height="122dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view255"
+            app:srcCompat="@drawable/ic_profilepicture" />
+
+        <TextView
+            android:id="@+id/textView1655"
+            android:layout_width="361dp"
+            android:layout_height="92dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="32dp"
+
+            android:layout_marginTop="11dp"
+            android:drawableLeft="@drawable/ic_mail"
+            android:text="mynameisxyzabcpqrstvuvzxqwert@gmail.com"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1955"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView1755"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_age"
+            android:text="Age"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.288"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1555"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView1855"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:text="Phone Number"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.288"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1655"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView1955"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="260dp"
+            android:drawableStart="@drawable/ic_message"
+            android:text="Message"
+            android:textSize="22sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.288"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1755"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton755"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="104dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.752"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view255"
+            app:srcCompat="@drawable/ic_addpropic" />
+
+        <ImageButton
+            android:id="@+id/imageButton855"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="104dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageButton755"
+            app:layout_constraintTop_toBottomOf="@+id/view255"
+            app:srcCompat="@drawable/ic_check_black_24dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="153dp"
-        android:layout_height="106dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="217dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginBottom="408dp"
-        app:srcCompat="@drawable/ic_profilepicture" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="371dp"
-        android:text="Name"
-        android:drawableStart="@drawable/ic_baseline_person_outline_24"
-        android:textSize="22sp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="283dp"
-        android:drawableLeft="@drawable/ic_mail"
-
-        android:text="mynameisxyzabcpqrstvuvzxqwert@gmail.com"
-        android:textSize="22sp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="223dp"
-        android:drawableStart="@drawable/ic_age"
-        android:text="Age"
-        android:textSize="22sp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="178dp"
-        android:drawableStart="@drawable/ic_phone"
-        android:text="Phone Number"
-        android:textSize="22sp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="135dp"
-        android:drawableStart="@drawable/ic_message"
-        android:text="Message"
-        android:textSize="22sp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="146dp"
-        android:layout_marginEnd="177dp"
-        android:layout_marginBottom="68dp"
-        android:background="@drawable/gradientbackground"
-        android:text="LOGOUT" />
-
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="67dp"
-        android:layout_marginBottom="425dp"
-        app:srcCompat="@drawable/ic_addpropic" />
-
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="424dp"
-        app:srcCompat="@drawable/ic_check_black_24dp" />
 
 
 </RelativeLayout>

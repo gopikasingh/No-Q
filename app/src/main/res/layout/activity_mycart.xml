@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mycart">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout">
+
+        <TextView
+            android:id="@+id/textView011"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="MY CART"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#acacac"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/re11"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:padding="6dp" />-->
+
+
+        <TextView
+            android:id="@+id/textView012"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView011"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:text="TO: shop name ayega yaha"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/gradientbackground"
+        android:padding="15dp"
+        android:text="PROCEED"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/textView015"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/textView017"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="0dp"
+        android:padding="5dp"
+        android:text="DELIVERY CHARGES: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView014"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView018"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/textView015"
+        android:padding="5dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/button01"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="17dp"
+        android:padding="5dp"
+        android:text="TOTAL PRICE: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView013"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView015"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-1dp"
+        android:padding="5dp"
+        android:text="SUB TOTAL: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView018"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:layout_above="@+id/button01"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="17dp"
+        android:layout_toEndOf="@+id/textView017"
+        android:padding="5dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView016"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView014"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@+id/textView013"
+        android:padding="5dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewww"
+        android:layout_width="match_parent"
+        android:layout_height="467dp"
+        android:layout_above="@+id/textView013"
+        android:layout_below="@+id/relativelayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="7dp" />
+
+
+</RelativeLayout>

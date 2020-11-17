@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "692550676667",
+    "firebase_url": "https://profileupdate-b5e79.firebaseio.com",
+    "project_id": "profileupdate-b5e79",
+    "storage_bucket": "profileupdate-b5e79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692550676667:android:ccb1daab95b81b8587f99e",
+        "android_client_info": {
+          "package_name": "com.example.noq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692550676667-lq63fl5brgrsnldo08qqm52fq7vme71h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEyya3Ha727Sav1PZVPFw5wOFpBr9HsXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692550676667-lq63fl5brgrsnldo08qqm52fq7vme71h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,6 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".signup">
 
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.Material.Light.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="744dp"
+        android:background="@color/grey"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/ic_launcher_background"
+        android:max="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <TextView
                 android:id="@+id/textView"
@@ -35,7 +51,7 @@
                 app:layout_constraintVertical_bias="0.053" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/editTextfirstname"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
 
@@ -48,6 +64,7 @@
                 android:textSize="22sp" />
 
             <EditText
+                android:id="@+id/editTextlastname"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
 
@@ -58,85 +75,20 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="300dp"
+                android:id="@+id/editTextusername"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="35dp"
-                android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
-                android:ems="10"
-                android:hint="Shop Name"
+                android:hint="Username"
                 android:inputType="textPersonName"
-                android:textSize="22sp" />
+                android:textSize="22sp"
+                tools:ignore="HardcodedText" />
 
             <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
 
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="35dp"
-                android:hint="Country"
-                android:drawableStart="@drawable/ic_baseline_location_on_24"
-                android:inputType="textPersonName"
-                android:textSize="22sp" />
-
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="35dp"
-                android:hint="State"
-                android:inputType="textPersonName"
-                android:textSize="22sp" />
-
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="35dp"
-                android:hint="City"
-                android:drawableStart="@drawable/ic_location_city"
-                android:inputType="textPersonName"
-                android:textSize="22sp" />
-
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="35dp"
-                android:hint="PIN Code"
-                android:drawableStart="@drawable/ic_baseline_fiber_pin_24"
-                android:inputType="textPersonName"
-                android:textSize="22sp" />
-
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="35dp"
-                android:hint="Street Address"
-                android:drawableStart="@drawable/ic_my_location"
-                android:inputType="textPersonName"
-                android:textSize="22sp" />
-
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="35dp"
-                android:hint="Phone Number"
-                android:drawableStart="@drawable/ic_phone"
-                android:inputType="textPersonName"
-                android:textSize="22sp" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName5"
+                android:id="@+id/editTextemail"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
 
@@ -163,7 +115,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextTextPassword3"
+                android:id="@+id/editTextTextconfirmPassword3"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -179,7 +131,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginStart="128dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="116dp"
                 android:layout_marginBottom="132dp"
                 android:background="#00B8D4"
@@ -199,8 +151,6 @@
                 android:background="@color/white"
                 android:text="Already have an account?Login"
                 android:textColor="#00B8D4" />
-
-
 
 
         </LinearLayout>

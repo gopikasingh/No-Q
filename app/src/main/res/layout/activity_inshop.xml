@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inshop">
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="483dp"
+        android:layout_marginEnd="142dp"
+        android:alpha="0.15"
+        android:background="#00FFFFFF"
+        android:rotation="180"
+
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.475" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="94dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="316dp"
+        android:alpha="0.15"
+
+        android:background="#00FFFFFF"
+        android:rotation="135"
+
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:layout_width="136dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="296dp"
+        android:alpha="0.15"
+        android:background="#00FFFFFF"
+        android:src="@drawable/bg"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924"
+
+        />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ExtraText">
+
+
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="260dp"
+                android:background="@color/ic_launcher_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_wave"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <Button
+                android:id="@+id/button45"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="35dp"
+                android:background="#00B8D4"
+                android:onClick="logout"
+                android:text="EXIT SHOP"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textemaill" />
+
+            <TextView
+                android:id="@+id/Textshopp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:hint="SHOP NAME"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/new_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:padding="125dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Textshopp"
+                app:srcCompat="@android:drawable/ic_menu_add" />
+
+            <TextView
+                android:id="@+id/Textphone"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+
+                android:hint="Contact info is very very very very very ver long Phone no."
+
+                android:maxLines="2"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textpin" />
+
+            <TextView
+                android:id="@+id/textemaill"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:hint="email can be very long too sometimes... that is why text view shold be long"
+
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Textphone" />
+
+            <TextView
+                android:id="@+id/textfn"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="FIRST NAME"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/Textaddress"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:maxLines="5"
+                android:text="Address is very very very very very very very very very long"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textfn" />
+
+            <TextView
+                android:id="@+id/textpin"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+
+                android:hint="PINCODE"
+                android:inputType="textPersonName"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Textaddress" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="98dp"
+                android:layout_height="736dp"
+                android:layout_marginTop="500dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button44" />
+
+            <Button
+                android:id="@+id/buttongoto"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+
+                android:background="#E75A5757"
+                android:text="GO TO ITEMS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button45" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar30"
+        style="@android:style/Widget.Material.Light.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#E73A3939"
+
+        android:indeterminateTint="@color/ic_launcher_background"
+        android:max="50"
+        android:scrollbarSize="1dp"
+        android:visibility="invisible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,40 +7,173 @@
     android:layout_height="match_parent"
     tools:context=".Details"
     >
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="800dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:alpha="0.15"
+        android:rotation="90"
+        android:src="@drawable/bg2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailshopname"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Sample View Title"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+
     <ImageView
         android:id="@+id/shopphoto1"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_below="@+id/detailshopname"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061"
+        app:layout_constraintTop_toBottomOf="@+id/detailshopname"
         app:srcCompat="@drawable/gramflour" />
 
     <TextView
         android:id="@+id/detailTitle"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Sample View Title"
         android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopphoto1" />
+
+    <TextView
+        android:id="@+id/detailprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detaildesc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="97dp"
+        android:gravity="center"
+        android:text="Sample Product Price"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailTitle" />
+
+    <TextView
+        android:id="@+id/detaildesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Sample Product details"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailprice"/>
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/number_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="112dp"
+
+        android:gravity="center"
+
+        app:backGroundColor="@color/ic_launcher_background"
+        app:finalNumber="10"
+        app:initialNumber="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonaddtocart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textSize="12sp"
+        tools:ignore="RelativeOverlap" />
+
+    <Button
+        android:id="@+id/buttonaddtocart"
+        style="@android:style/Widget.Holo.Light.Button.Small"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttongotocart"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginBottom="28dp"
+        android:background="#B63A3939"
+        android:gravity="center"
+        android:text="ADD TO CART"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttongotocart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttongotocart"
+        style="@android:style/Widget.Holo.Light.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="-8dp"
+        android:background="#B63A3939"
+        android:gravity="center"
+        android:onClick="OpenCart"
+        android:text="GO TO CART"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shopphoto1"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

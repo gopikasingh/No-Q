@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cardmain">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-63dp"
+        tools:layout_editor_absoluteY="67dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <SearchView
+                android:id="@+id/searchView30"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#938F8F"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="add"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@color/white"
+                android:queryHint="Search Shops"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton22"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </SearchView>
+
+            <ImageButton
+                android:id="@+id/imageButton23"
+                android:layout_width="59dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/searchView30"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="700dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView3" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="405dp"
+                android:layout_height="718dp"
+                android:background="@drawable/gradientbackground"
+                android:text="You don't have any shops added yet. Add a shop"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView30" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

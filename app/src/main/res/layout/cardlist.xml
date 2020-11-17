@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-<<<<<<< HEAD
     android:background="@color/grey"
     android:padding="20dp">
 
@@ -32,24 +31,10 @@
         android:dividerHeight="0.0px"
         android:clipToPadding="false"
         android:clipChildren="false">
-=======
-    android:background="#ccc"
-    android:padding="15dp">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
->>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="229dp"
-<<<<<<< HEAD
             android:padding="0dp">
 
             <ImageView
@@ -63,36 +48,17 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_goneMarginLeft="0dp"
                 app:layout_goneMarginRight="0dp"
-=======
-            android:padding="5dp">
-
-            <ImageView
-                android:id="@+id/shopphoto"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
->>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
                 app:srcCompat="@drawable/shopbj" />
 
             <TextView
                 android:id="@+id/shopname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:text="TextView"
                 android:textColor="@android:color/black"
                 android:textSize="22sp"
-=======
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="12dp"
-                android:text="TextView"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
->>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/shopphoto" />
 
@@ -100,7 +66,6 @@
                 android:id="@+id/shopaddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="0dp"
                 android:text="TextView"
@@ -109,13 +74,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/shopname"
                 app:layout_constraintVertical_bias="0.0" />
-=======
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="4dp"
-                android:text="TextView"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shopname" />
->>>>>>> ba0640c659c03926d4ad1c7a1d8d3bbdf17c0cfc
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

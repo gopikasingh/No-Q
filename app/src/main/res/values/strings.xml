@@ -15,5 +15,8 @@
     <string name="name">Name</string>
     <string name="already_have_an_account_login">ALREADY HAVE AN ACCOUNT? LOGIN</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="activity_add_item_desc" />
+    <string name="activity_add_item_price" />
+    <string name="activity_add_item" />
 
 </resources>
